@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestND-DataproviderUsingThreadcount(failed)">
+    <classes>
+      <class name="tests.TstNG_dataProviderUsingMethods">
+        <methods>
+          <include name="VerifyLogin" invocation-numbers="1 0"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.TstNG_dataProviderUsingMethods -->
+      <class name="tests.TstNG_dtPrvdrrUsingMethodsArrayPara">
+        <methods>
+          <include name="VerifyLogin" invocation-numbers="1"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.TstNG_dtPrvdrrUsingMethodsArrayPara -->
+      <class name="tests.testNG_DataProvider">
+        <methods>
+          <include name="VerifyLogin" invocation-numbers="2 4 3 1 0"/>
+        </methods>
+      </class> <!-- tests.testNG_DataProvider -->
+    </classes>
+  </test> <!-- TestND-DataproviderUsingThreadcount(failed) -->
+</suite> <!-- Failed suite [Suite] -->
